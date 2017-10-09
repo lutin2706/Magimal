@@ -1,0 +1,50 @@
+
+<div class="container">
+  <h1>Animal Form</h1>
+  <form>
+
+      <div class="form-group">
+          <label for="type">Id</label>
+          <input (input)="onRefreshId($event)" type="text" class="form-control" id="type">
+        </div>
+
+    <div class="form-group">
+        <label for="type">Type</label>
+        <input (input)="onRefreshType($event)" type="text" class="form-control" id="type">
+      </div>
+
+    <div class="form-group">
+      <label for="nom">Nom</label>
+      <input (input)="onRefreshNom($event)" type="text" class="form-control" id="nom">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Description</label>
+      <input  (input)="onRefreshDescription($event)" type="text" class="form-control" id="description">
+    </div>
+
+    <div class="form-group">
+        <label for="name">Cout</label>
+        <input  (input)="onRefreshCout($event)" type="text" class="form-control" id="cout">
+    </div>
+
+    <div class="form-group">
+        <label for="name">Url</label>
+        <input  (input)="onRefreshUrl($event)" type="text" class="form-control" id="url">
+    </div>
+
+    <div class="form-group">
+        <label for="name">Date naissance</label>
+        <input  (input)="onRefreshDateNaissance($event)" type="text" class="form-control" id="cout">
+    </div>
+
+    <button (click)="onClick($event)" type="submit" class="btn btn-success">Submit</button>
+    <button (click)="onClickUpdate($event)" type="submit" class="btn btn-success">Update</button>
+    <button (click)="onClickRefresh($event)" type="submit" class="btn btn-success">Refresh</button>
+    
+    
+
+  </form>
+
+</div>
+
